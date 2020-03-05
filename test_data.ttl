@@ -1,0 +1,18 @@
+@prefix : <https://recyclingpartnership.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Durham_NC a :Community .
+:Chapel_Hill_NC a :Community .
+:PET_BJJ a :recyclingCat .
+:PET_PBC a :packagingCat .
+:OJ a :specificItem .
+
+:Durham_NC :canRecycle :PET_BJJ .
+:Chapel_Hill_NC :cannotRecycle :PET_BJJ .
+
+:PET_PBC :subcategoryOf :PET_BJJ .
+
+:OJ :isTypeOf :PET_PBC .
